@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  top: 60px;
+}
+
+#canvas {
+  margin-top: 70px;
+  border: 1px solid black;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.radio-btn {
+  margin-top: 5px;
+}
+
+#radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 350px;
+}
+
+#reset-btn {
+  background-color: tomato;
+  width: 100px;
+  height: 50px;
+  outline: none;
+}
