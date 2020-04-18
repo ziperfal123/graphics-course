@@ -1,34 +1,69 @@
+<!--Amit Levy - 311133433-->
+<!--Yaniv Ziperfal - 203311303-->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet"></link>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
     <title>Ex 01</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Paint</h1>
-    <canvas id="canvas" width="800" height="425"></canvas>
-    <div id="radio-group">
-        <div class="input-wrapper">
-            <label>Line</label>
-            <input class="radio-btn" type="radio" name="radioGroup" value="line" checked>
+    <div id="canvas-container">
+      <div id="action-icons">
+        <input
+          type="image"
+          class="action-btn selected"
+          id="line"
+          value="line"
+          src="./assets/minus.svg"
+        />
+        <input
+          type="image"
+          class="action-btn"
+          value="circle"
+          src="./assets/circle.svg"
+        />
+        <div class="container">
+          <input
+            type="number"
+            class="hidden-btn hide-element"
+            id="scale-btn"
+            max="100"
+            min="1"
+          />
+          <input
+            type="image"
+            class="action-btn"
+            value="bezier"
+            src="./assets/bezier.svg"
+            id="scale-toggle"
+          />
         </div>
-        <div class="input-wrapper">
-            <label>Circle</label>
-            <input class="radio-btn" type="radio" name="radioGroup" value="circle">
+
+        <div class="container">
+          <input type="number" class="hidden-btn hide-element" id="width-btn" />
+          <input
+            type="image"
+            id="width-toggle"
+            value="width"
+            src="./assets/width.svg"
+          />
         </div>
-        <div class="input-wrapper">
-            <label>Special line</label>
-            <input class="radio-btn" type="radio" name="radioGroup" value="Special line">        
-        </div>
-        <button id="reset-btn" type="button">clean canvas</button>
+        <input type="color" id="color-btn" />
+        <input
+          type="image"
+          id="reset-btn"
+          src="./assets/bin.svg"
+          value="reset-btn"
+        />
+      </div>
+      <canvas id="canvas" width="1200" height="700"></canvas>
     </div>
 
-
-
-
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

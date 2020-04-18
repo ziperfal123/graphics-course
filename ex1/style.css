@@ -1,3 +1,6 @@
+/*Amit Levy - 311133433  */
+/*Yaniv Ziperfal - 203311303*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +13,10 @@ body {
   align-items: center;
 }
 
+input {
+  outline: none;
+}
+
 h1 {
   position: relative;
   top: 60px;
@@ -18,6 +25,7 @@ h1 {
 #canvas {
   margin-top: 70px;
   border: 1px solid black;
+  border-radius: 4px;
 }
 
 .input-wrapper {
@@ -38,9 +46,48 @@ h1 {
   width: 350px;
 }
 
-#reset-btn {
-  background-color: tomato;
-  width: 100px;
-  height: 50px;
-  outline: none;
+#canvas-container {
+  display: flex;
+}
+
+#action-icons {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  margin-top: 70px;
+  margin-right: 20px;
+}
+
+#action-icons input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+
+.hidden-btn {
+  position: absolute;
+  right: 60px;
+  width: 35px !important;
+}
+
+.hide-element {
+  display: none;
+}
+
+.selected {
+  box-shadow: 0 0 0 2px;
+}
+
+label {
+  position: absolute;
+  right: 75px;
+  bottom: 65px;
 }
